@@ -1,0 +1,216 @@
+body {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  /* line-height: 1.65; */
+  /* simula la visualizzazione del JPG del mockup */
+  background-color: #363636;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+div {
+  display: block;
+}
+#container {
+  width: 1280px;
+  margin: 0 auto;
+  border: 1px solid #dee1e3;
+  background-color: #e9edee;
+  /* per vedere meglio le proporzioni del piè di pagina */
+  margin-bottom: 200px;
+}
+
+.bgDarkGrey {
+  background-color: #222f3f;
+}
+.bgGrey {
+  background-color: #364759;
+}
+.bgOrange {
+  background-color: #f56600;
+}
+
+.colorWhite {
+  color: white;
+}
+.colorLightBlue {
+  color: #0f6679;
+}
+.colorBlack {
+  color: black;
+}
+
+#logo {
+  height: 5rem;
+  vertical-align: middle;
+}
+
+#logo > img {
+  height: 70%;
+  display: inline-block;
+  margin: 0.8rem 2rem;
+}
+
+nav {
+  padding-top: 0.4rem;
+  font-size: 1rem;
+  height: 1.5rem;
+  border-bottom: 1px solid black;
+}
+nav ul {
+  padding-left: 2rem;
+}
+nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 1.8rem;
+}
+main {
+  margin: 2rem;
+}
+#orangeBox {
+  color: white;
+  height: 1.6rem;
+  text-align: center;
+  padding-top: 0.7rem;
+  font-size: 1rem;
+}
+#section1,
+#section2,
+#section3,
+#section4 {
+  margin-top: 2rem;
+}
+#section2 {
+  background-color: white;
+}
+#holidayGiftGuides {
+  width: 100%;
+  height: 13rem;
+  color: white;
+  text-align: center;
+  background-image: url('../images/bg-image.png');
+  background-size: contain;
+  background-position: center;
+}
+#holidayGiftGuides > p {
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-top: 4.5rem;
+}
+#holidayGiftGuides p:last-child {
+  font-size: 1.3rem;
+  padding-top: 2rem;
+}
+
+#sec2DivText {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+[id*='section'] .link {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+
+[id*='section'] .link a {
+  color: #125a66;
+  text-decoration: none;
+}
+
+#sec2DivImages {
+  text-align: center;
+  width: 100%;
+}
+
+.sec2DivImage {
+  width: 265px;
+  height: 350px;
+  display: inline-block;
+  border-radius: 5%;
+  margin: 1rem;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+#sec2Img1 {
+  background-image: url('../images/img_1.jpg');
+}
+#sec2Img2 {
+  background-image: url('../images/img_2.jpg');
+}
+#sec2Img3 {
+  background-image: url('../images/img_3.jpg');
+}
+#sec2Img4 {
+  background-image: url('../images/img_4.jpg');
+}
+#sec2Img1,
+#sec2Img2,
+#sec2Img3,
+#sec2Img4,
+#sec3Img1,
+#sec4Img1 {
+  background-size: cover;
+  background-position: center;
+}
+
+#sec3Img1 {
+  background-image: url('../images/img_9.png');
+}
+#sec4Img1 {
+  background-image: url('../images/img_10.png');
+}
+
+#sec3Img1,
+#sec4Img1 {
+  width: 100;
+  height: 350px;
+}
+
+#sec3DivText,
+#sec4DivText {
+  text-align: center;
+}
+
+#sec3DivText,
+#sec4DivText {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+
+#footerDivText {
+  padding-top: 1rem;
+  font-size: 1rem;
+  height: 2rem;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#footerDivText a {
+  color: white;
+}
+
+#logoFooter {
+  text-align: center;
+  height: 11rem;
+}
+
+#logoFooter img {
+  margin: 4rem;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
