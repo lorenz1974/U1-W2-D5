@@ -1,8 +1,6 @@
 body {
   font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
-  /* line-height: 1.65; */
-  /* simula la visualizzazione del JPG del mockup */
   background-color: #363636;
 }
 
@@ -16,18 +14,27 @@ h6 {
   font-weight: bold;
   line-height: 1.5;
 }
+
 div {
   display: block;
 }
-#container {
-  width: 1280px;
-  margin: 0 auto;
-  border: 1px solid #dee1e3;
-  background-color: #e9edee;
-  /* per vedere meglio le proporzioni del piè di pagina */
-  margin-bottom: 200px;
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
+/* Container */
+#container {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 100px; /* per vedere meglio le proporzioni del piè di pagina */
+  border: 1px solid #dee1e3;
+  background-color: #e9edee;
+}
+
+/* Colors */
 .bgDarkGrey {
   background-color: #222f3f;
 }
@@ -48,6 +55,7 @@ div {
   color: black;
 }
 
+/* Logo */
 #logo {
   height: 5rem;
   vertical-align: middle;
@@ -59,23 +67,30 @@ div {
   margin: 0.8rem 2rem;
 }
 
+/* Navigation */
 nav {
   padding-top: 0.4rem;
   font-size: 1rem;
-  height: 1.5rem;
   border-bottom: 1px solid black;
 }
+
 nav ul {
   padding-left: 2rem;
 }
+
 nav ul li {
+  padding: 0.25rem;
   display: inline-block;
   vertical-align: middle;
   padding-right: 1.8rem;
 }
+
+/* Main content */
 main {
   margin: 2rem;
 }
+
+/* Orange Box */
 #orangeBox {
   color: white;
   height: 1.6rem;
@@ -83,15 +98,21 @@ main {
   padding-top: 0.7rem;
   font-size: 1rem;
 }
+
+/* Sections */
 #section1,
 #section2,
 #section3,
 #section4 {
   margin-top: 2rem;
 }
+
 #section2 {
   background-color: white;
+  text-align: center;
 }
+
+/* Holiday Gift Guides */
 #holidayGiftGuides {
   width: 100%;
   height: 13rem;
@@ -101,21 +122,25 @@ main {
   background-size: contain;
   background-position: center;
 }
+
 #holidayGiftGuides > p {
   font-weight: bold;
   font-size: 2.5rem;
   padding-top: 4.5rem;
 }
+
 #holidayGiftGuides p:last-child {
   font-size: 1.3rem;
   padding-top: 2rem;
 }
 
+/* Section 2 */
 #sec2DivText {
+  text-align: left;
   font-size: 1rem;
   font-weight: bold;
   padding-top: 0.8rem;
-  padding-left: 0.8rem;
+  padding-left: 1.8rem;
 }
 
 [id*='section'] .link {
@@ -125,9 +150,9 @@ main {
 
 [id*='section'] .link a {
   color: #125a66;
-  text-decoration: none;
 }
 
+/* Images */
 #sec2DivImages {
   text-align: center;
   width: 100%;
@@ -142,6 +167,7 @@ main {
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
+/* Individual Images */
 #sec2Img1 {
   background-image: url('../images/img_1.jpg');
 }
@@ -173,36 +199,34 @@ main {
 
 #sec3Img1,
 #sec4Img1 {
-  width: 100;
   height: 350px;
 }
 
+/* Section 3 and Section 4 */
 #sec3DivText,
 #sec4DivText {
   text-align: center;
-}
-
-#sec3DivText,
-#sec4DivText {
   font-size: 1rem;
   font-weight: 700;
   padding-top: 0.5rem;
 }
 
+/* Footer */
 #footerDivText {
+  height: 2rem;
   padding-top: 1rem;
   font-size: 1rem;
-  height: 2rem;
+  font-weight: bold;
   text-align: center;
   color: white;
-  font-size: 1rem;
-  font-weight: bold;
 }
 
 #footerDivText a {
   color: white;
+  text-decoration: underline;
 }
 
+/* Footer Logo */
 #logoFooter {
   text-align: center;
   height: 11rem;
@@ -213,4 +237,17 @@ main {
   height: 60px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#note {
+  width: 15rem;
+  height: 3rem;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
 }
