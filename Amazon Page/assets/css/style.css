@@ -10,7 +10,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -24,8 +23,14 @@ a {
   color: white;
 }
 
+img {
+  object-fit: cover;
+  display: block;
+}
+
 /* Container */
 #container {
+  /* Simula la cornice del mockup */
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
@@ -57,32 +62,41 @@ a {
 
 /* Logo */
 #logo {
-  height: 5rem;
-  vertical-align: middle;
+  height: 3.5rem;
 }
 
 #logo > img {
-  height: 70%;
-  display: inline-block;
-  margin: 0.8rem 2rem;
+  width: 100px;
+  padding: 0.8rem 2rem;
 }
 
 /* Navigation */
+/* per la centratura verticale https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+/* NAV è il contenitore dell'immagine quindi deve avere il 'position: relative;' */
 nav {
-  padding-top: 0.4rem;
-  font-size: 1rem;
+  height: 2.1rem;
   border-bottom: 1px solid black;
+  position: relative;
 }
 
 nav ul {
   padding-left: 2rem;
+  font-size: 0.9rem;
+  /* La lista è il contenuto e quindi deve essere traslato e avere posizione assoluta */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* Per quando la pagina si riduce di larghezza */
+  text-align: center;
 }
 
 nav ul li {
-  padding: 0.25rem;
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 1.8rem;
+  display: inline;
+  padding: 0 0.9rem 0 0;
+  /* Per quando la pagina si riduce di larghezza */
+  white-space: none;
 }
 
 /* Main content */
@@ -93,10 +107,10 @@ main {
 /* Orange Box */
 #orangeBox {
   color: white;
-  height: 1.6rem;
+  height: 1.4rem;
   text-align: center;
-  padding-top: 0.7rem;
-  font-size: 1rem;
+  padding-top: 0.6rem;
+  font-size: 0.9rem;
 }
 
 /* Sections */
@@ -114,38 +128,38 @@ main {
 
 /* Holiday Gift Guides */
 #holidayGiftGuides {
-  width: 100%;
-  height: 13rem;
+  height: 9em;
   color: white;
   text-align: center;
   background-image: url('../images/bg-image.png');
-  background-size: contain;
   background-position: center;
+  background-position: top;
 }
 
 #holidayGiftGuides > p {
   font-weight: bold;
-  font-size: 2.5rem;
-  padding-top: 4.5rem;
+  font-size: 1.9rem;
+  padding-top: 4rem;
 }
 
 #holidayGiftGuides p:last-child {
-  font-size: 1.3rem;
-  padding-top: 2rem;
+  font-size: 1rem;
+  padding-top: 1.5rem;
 }
 
 /* Section 2 */
 #sec2DivText {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding-top: 0.8rem;
-  padding-left: 1.8rem;
+  padding-top: 1.3rem;
+  padding-left: 1.3rem;
 }
 
 [id*='section'] .link {
-  font-size: 0.8rem;
-  margin-left: 1rem;
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+  font-weight: bold;
 }
 
 [id*='section'] .link a {
@@ -159,11 +173,11 @@ main {
 }
 
 .sec2DivImage {
-  width: 265px;
-  height: 350px;
+  width: 270px;
+  height: 335px;
   display: inline-block;
   border-radius: 5%;
-  margin: 1rem;
+  margin: 1rem 0.8rem;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -199,7 +213,7 @@ main {
 
 #sec3Img1,
 #sec4Img1 {
-  height: 350px;
+  height: 375px;
 }
 
 /* Section 3 and Section 4 */
@@ -213,10 +227,10 @@ main {
 
 /* Footer */
 #footerDivText {
-  height: 2rem;
-  padding-top: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
+  height: 2.3rem;
+  padding-top: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
   text-align: center;
   color: white;
 }
@@ -230,24 +244,26 @@ main {
 #logoFooter {
   text-align: center;
   height: 11rem;
+  position: relative;
 }
 
 #logoFooter img {
-  margin: 4rem;
-  height: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 145px;
+  /* Vedi soluzione per la centratura verticale nell'header... */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #note {
-  width: 15rem;
-  height: 3rem;
+  font-size: 1rem;
   margin: 0 auto;
   border: 1px solid black;
   background-color: white;
   text-align: center;
-  padding: 3rem;
-  font-size: 1rem;
+  padding: 1rem;
   font-weight: bold;
-  margin-bottom: 5rem;
 }
